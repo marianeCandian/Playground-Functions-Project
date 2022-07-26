@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 // Desafio 1
 
 function compareTrue(animal1, animal2) {
@@ -60,19 +61,19 @@ function catAndMouse(mouse, cat1, cat2) {
   } return 'os gatos trombam e o rato foge';
 }
 // Desafio 8
-function fizzBuzz(array){
+function fizzBuzz(array) {
   let arrayResposta = [];
-  for(let index = 0; index < array.length; index += 1){
-    if(array[index] % 3 === 0){
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] % 3 === 0) {
       arrayResposta[index] = 'fizz';
     }
-    if(array[index] % 5 === 0){
+    if (array[index] % 5 === 0) {
       arrayResposta[index] = 'buzz';
     }
-    if(array[index] % 3 === 0 && array[index] % 5 === 0){
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
       arrayResposta[index] = 'fizzBuzz';
     }
-    if(!(array[index] % 3 === 0) && !(array[index] % 5 ===0)){
+    if (array[index] % 3 !== 0 && array[index] % 5 !== 0) {
       arrayResposta[index] = 'bug!';
     }
   }
@@ -80,16 +81,49 @@ function fizzBuzz(array){
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let newString = [];
+  for (let index in string) {
+    if (string[index] === 'a') {
+      newString.push('1');
+    } else if (string[index] === 'e') {
+      newString.push('2');
+    } else if (string[index] === 'i') {
+      newString.push('3');
+    } else if (string[index] === 'o') {
+      newString.push('4');
+    } else if (string[index] === 'u') {
+      newString.push('5');
+    } else {
+      newString.push(string[index]);
+    }
+  }
+  return newString.join('');
 }
-function decode() {
-  // seu código aqui
+
+function decode(string) {
+  let newString = [];
+  for (let index in string) {
+    if (string[index] === '1') {
+      newString.push('a');
+    } else if (string[index] === '2') {
+      newString.push('e');
+    } else if (string[index] === '3') {
+      newString.push('i');
+    } else if (string[index] === '4') {
+      newString.push('o');
+    } else if (string[index] === '5') {
+      newString.push('u');
+    } else {
+      newString.push(string[index]);
+    }
+  }
+  return newString.join('');
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tecnologias, nome) {
+  
 }
 
 module.exports = {
