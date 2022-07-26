@@ -132,7 +132,6 @@ function techList(tecnologias, nome) {
     return 'Vazio!';
   } return objeto;
 }
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 module.exports = {
   calcArea,
