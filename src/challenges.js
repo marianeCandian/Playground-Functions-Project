@@ -2,8 +2,8 @@
 
 function compareTrue(animal1, animal2) {
   if (animal1 === true && animal2 === true) {
-    return 'true';
-  } return 'false';
+    return true;
+  } return false;
 }
 
 // Desafio 2
@@ -22,9 +22,13 @@ function concatName(array) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(vitorias, empates) {
+  let wins = 3;
+  let ties = 1;
+  return vitorias * wins + empates * ties;
 }
+
+console.log(footballPoints(1, 2));
 
 // Desafio 6
 function highestCount() {
