@@ -123,8 +123,16 @@ function decode(string) {
 
 // Desafio 10
 function techList(tecnologias, nome) {
-  
+  let objeto = [];
+  tecnologias.sort();
+  for (let i = 0; i < tecnologias.length; i += 1) {
+    objeto.push({ tech: tecnologias[i], name: nome });
+  }
+  if (objeto.length === 0) {
+    return 'Vazio!';
+  } return objeto;
 }
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 module.exports = {
   calcArea,
