@@ -1,7 +1,7 @@
 // Desafio 1
 
 function compareTrue(animal1, animal2) {
-  if(animal1 === true && animal2 === true) {
+  if (animal1 === true && animal2 === true) {
     return 'true';
   } return 'false';
 }
@@ -16,11 +16,9 @@ function splitSentence(string) {
   return string.split(' ');
 }
 
-console.log(splitSentence('go Trybe'));
-
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  return array[(array.length - 1)] + ', ' + array[0];
 }
 
 // Desafio 5
