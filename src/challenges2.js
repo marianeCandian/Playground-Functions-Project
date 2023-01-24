@@ -20,8 +20,8 @@ return ('(' + array[0] + array[1] + ') ' + array[2] + array[3] + array[4] + arra
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(linhaA, linhaB, linhaC) {
+  
 }
 
 // Desafio 13
